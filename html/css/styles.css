@@ -42,7 +42,7 @@ body {
   margin-left: 20px;
 }
 .header-container .header-right .search {
-  top: 60px;
+  top: 40px;
 }
 .header-container .header-right .social-buttons {
   top: 2px;
@@ -59,6 +59,11 @@ body {
   color: #4c66a4;
   background: #fff;
 }
+.header-container .header-right .main-nav {
+  font-size: 20px;
+  top: 80px;
+  right: 0;
+}
 .header-container .header-right .main-nav ul,
 .header-container .header-right .main-nav li {
   padding: 0;
@@ -67,4 +72,12 @@ body {
 }
 .header-container .header-right .main-nav li {
   float: left;
+  margin-left: 10px;
+}
+.header-container .header-right .main-nav li a {
+  color: #9bafc3;
+}
+.header-container .header-right .main-nav li a:hover,
+.header-container .header-right .main-nav li a.active {
+  color: #fff;
 }
