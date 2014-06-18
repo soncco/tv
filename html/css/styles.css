@@ -14,4 +14,57 @@ body {
 .header-container .logo {
   margin: 0;
   padding: 0;
+  float: left;
+}
+.header-container .header-right {
+  float: right;
+  position: relative;
+  width: 40%;
+}
+.header-container .header-right a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header-container .header-right .social-buttons,
+.header-container .header-right .session,
+.header-container .header-right .search,
+.header-container .header-right .main-nav {
+  position: absolute;
+  right: 0;
+}
+.header-container .header-right .session {
+  top: 5px;
+  font-size: 20px;
+}
+.header-container .header-right .session .cart {
+  display: inline-block;
+  margin-left: 20px;
+}
+.header-container .header-right .search {
+  top: 60px;
+}
+.header-container .header-right .social-buttons {
+  top: 2px;
+  right: 180px;
+}
+.header-container .header-right .social-buttons .social {
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+  font-size: 24px;
+  color: #fff;
+}
+.header-container .header-right .social-buttons .social.fb:hover {
+  color: #4c66a4;
+  background: #fff;
+}
+.header-container .header-right .main-nav ul,
+.header-container .header-right .main-nav li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.header-container .header-right .main-nav li {
+  float: left;
 }
