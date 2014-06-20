@@ -55,10 +55,6 @@ body {
   font-size: 24px;
   color: #fff;
 }
-.header-container .header-right .social-buttons .social.fb:hover {
-  color: #4c66a4;
-  background: #fff;
-}
 .header-container .header-right .main-nav {
   font-size: 20px;
   top: 80px;
