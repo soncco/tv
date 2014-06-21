@@ -4,6 +4,7 @@ html(lang="es")
     meta(charset="utf-8")
     link(rel="stylesheet", href="bower_components/normalize.css/normalize.css", type="text/css")
     link(rel="stylesheet", href="bower_components/font-awesome/css/font-awesome.min.css", type="text/css")
+    link(rel="stylesheet", href="bower_components/superslides/dist/stylesheets/superslides.css", type="text/css")
     link(rel="stylesheet", href="css/styles.css", type="text/css")
     title Tv Fácil
 
@@ -48,7 +49,88 @@ html(lang="es")
               li
                 a(href="#") Contacto
 
-    .home-slider
-      a(href="#")
-        img.slider(src="http://placehold.it/1500x1000")
+    .home-slider#slides
+      ul.main-slider.slides-container
+        li
+          a(href="#")
+            img.slider(src="http://placehold.it/1600x780/fdcffa")
+        li
+          a(href="#")
+            img.slider(src="http://placehold.it/1600x780/e4d2c1")
+        li
+          a(href="#")
+            img.slider(src="http://placehold.it/1600x780/c7d4aa")
+
+    .main-container
+      .main-content.wrapper
+        .content
+          .home-productos
+            h3.home-producto-title Televisores
+            .home-producto.first
+              a(href="#")
+                img.producto-imagen(src="http://placehold.it/360x234")
+              h4.producto-nombre
+                a(href="#") LG Electronics 42LB6300 42-Inch 1080p 120Hz Smart LED TV
+              .producto-body
+                .descripcion
+                  | Refresh Rate: 120Hz (Native); Motion Clarity Index: 600 (Effective)
+                  | Backlight: LED (Direct LED)
+                  | Smart Functionality: Yes - WebOS, Includes Magic Remote
+                .acciones
+                  a.precio(href="#") S/. 1700.00
+            .home-producto
+              a(href="#")
+                img.producto-imagen(src="http://placehold.it/360x234")
+              h4.producto-nombre
+                a(href="#") LG Electronics 42LB6300 42-Inch 1080p 120Hz Smart LED TV
+              .producto-body
+                .descripcion
+                  | Refresh Rate: 120Hz (Native); Motion Clarity Index: 600 (Effective)
+                  | Backlight: LED (Direct LED)
+                  | Smart Functionality: Yes - WebOS, Includes Magic Remote
+                .acciones
+                  a.precio(href="#") S/. 1700.00
+
+            h3.home-producto-title Cámaras
+            .home-producto.first
+              a(href="#")
+                img.producto-imagen(src="http://placehold.it/360x234")
+              h4.producto-nombre
+                a(href="#") LG Electronics 42LB6300 42-Inch 1080p 120Hz Smart LED TV
+              .producto-body
+                .descripcion
+                  | Refresh Rate: 120Hz (Native); Motion Clarity Index: 600 (Effective)
+                  | Backlight: LED (Direct LED)
+                  | Smart Functionality: Yes - WebOS, Includes Magic Remote
+                .acciones
+                  a.precio(href="#") S/. 1700.00
+            .home-producto
+              a(href="#")
+                img.producto-imagen(src="http://placehold.it/360x234")
+              h4.producto-nombre
+                a(href="#") LG Electronics 42LB6300 42-Inch 1080p 120Hz Smart LED TV
+              .producto-body
+                .descripcion
+                  | Refresh Rate: 120Hz (Native); Motion Clarity Index: 600 (Effective)
+                  | Backlight: LED (Direct LED)
+                  | Smart Functionality: Yes - WebOS, Includes Magic Remote
+                .acciones
+                  a.precio(href="#") S/. 1700.00
+        .sidebar
+          .sidebar-bloque
+            p
+              img(src="http://placehold.it/400x100")
+          .sidebar-bloque
+            p
+              img(src="http://placehold.it/400x100")
+          .sidebar-bloque
+            p
+              img(src="http://placehold.it/400x100")
+          .sidebar-bloque
+            p
+              img(src="http://placehold.it/400x100")
+
+  script(src="bower_components/jquery/jquery.min.js")
+  script(src="bower_components/superslides/dist/jquery.superslides.min.js")
+  script(src="js/tvfacil.js")
 

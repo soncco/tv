@@ -10,6 +10,7 @@ body {
   background: rgba(44,62,80,0.9);
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 .header-container .logo {
   margin: 0;
@@ -76,4 +77,77 @@ body {
 .header-container .header-right .main-nav li a:hover,
 .header-container .header-right .main-nav li a.active {
   color: #fff;
+}
+.main-slider {
+  padding: 0;
+  margin: 0;
+}
+.main-container {
+  background: #f1f1f1;
+  overflow: hidden;
+}
+.main-container .main-content {
+  padding-top: 10px;
+}
+.main-container .main-content .content {
+  float: left;
+  width: 780px;
+  margin-right: 20px;
+}
+.main-container .main-content .sidebar {
+  float: right;
+  width: 400px;
+}
+.main-container .main-content .home-producto-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #2c3e50;
+  margin: 0 0 6px 0;
+  padding: 0;
+  border-bottom: 1px solid #8d8585;
+}
+.main-container .main-content .home-producto {
+  background: #fff;
+  width: 360px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.main-container .main-content .home-producto.first {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.main-container .main-content .home-producto .producto-nombre {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.main-container .main-content .home-producto .producto-nombre a {
+  color: #2980b9;
+  text-decoration: none;
+}
+.main-container .main-content .home-producto .producto-nombre a:hover {
+  text-decoration: underline;
+}
+.main-container .main-content .home-producto .producto-body {
+  padding: 0 8px;
+  font-size: 14px;
+}
+.main-container .main-content .home-producto .producto-body .descripcion {
+  float: left;
+  width: 60%;
+  padding-bottom: 10px;
+}
+.main-container .main-content .home-producto .producto-body .acciones {
+  float: right;
+  width: 40%;
+  text-align: center;
+}
+.main-container .main-content .home-producto .producto-body .acciones .precio {
+  text-decoration: none;
+  display: inline-block;
+  background: #ca4a43;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 18px;
 }
