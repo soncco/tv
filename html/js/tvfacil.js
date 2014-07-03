@@ -1,6 +1,6 @@
 (function($) {
   $('#slides').superslides({
     hashchange: false,
-    play: 12000
+    play: 5000
   });
 })(jQuery);

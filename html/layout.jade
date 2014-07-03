@@ -6,6 +6,7 @@ html(lang="es")
     link(rel="stylesheet", href="bower_components/font-awesome/css/font-awesome.min.css", type="text/css")
     link(rel="stylesheet", href="bower_components/superslides/dist/stylesheets/superslides.css", type="text/css")
     link(rel="stylesheet", href="css/styles.css", type="text/css")
+    block css
     title Tv Fácil
 
   body
@@ -13,7 +14,7 @@ html(lang="es")
       header.header.wrapper
         h1.logo
           a(href="#")
-            img(src="http://placehold.it/200x100")
+            img(src="http://placehold.it/200x100", width="200", height="100")
         .header-right
           aside.social-buttons
             a.social.fb(href="#")
@@ -36,7 +37,7 @@ html(lang="es")
               i.fa.fa-shopping-cart
           aside.search
             form
-              input(type="text")
+              input#search-form(type="text", placeholder="Buscar")
 
           nav.main-nav
             ul
@@ -48,89 +49,66 @@ html(lang="es")
                 a(href="#") Nosotros
               li
                 a(href="#") Contacto
-
-    .home-slider#slides
-      ul.main-slider.slides-container
-        li
-          a(href="#")
-            img.slider(src="http://placehold.it/1600x780/fdcffa")
-        li
-          a(href="#")
-            img.slider(src="http://placehold.it/1600x780/e4d2c1")
-        li
-          a(href="#")
-            img.slider(src="http://placehold.it/1600x780/c7d4aa")
+    block slides
 
     .main-container
       .main-content.wrapper
         .content
-          .home-productos
-            h3.home-producto-title Televisores
-            .home-producto.first
-              a(href="#")
-                img.producto-imagen(src="http://placehold.it/360x234")
-              h4.producto-nombre
-                a(href="#") LG Electronics 42LB6300 42-Inch 1080p 120Hz Smart LED TV
-              .producto-body
-                .descripcion
-                  | Refresh Rate: 120Hz (Native); Motion Clarity Index: 600 (Effective)
-                  | Backlight: LED (Direct LED)
-                  | Smart Functionality: Yes - WebOS, Includes Magic Remote
-                .acciones
-                  a.precio(href="#") S/. 1700.00
-            .home-producto
-              a(href="#")
-                img.producto-imagen(src="http://placehold.it/360x234")
-              h4.producto-nombre
-                a(href="#") LG Electronics 42LB6300 42-Inch 1080p 120Hz Smart LED TV
-              .producto-body
-                .descripcion
-                  | Refresh Rate: 120Hz (Native); Motion Clarity Index: 600 (Effective)
-                  | Backlight: LED (Direct LED)
-                  | Smart Functionality: Yes - WebOS, Includes Magic Remote
-                .acciones
-                  a.precio(href="#") S/. 1700.00
-
-            h3.home-producto-title Cámaras
-            .home-producto.first
-              a(href="#")
-                img.producto-imagen(src="http://placehold.it/360x234")
-              h4.producto-nombre
-                a(href="#") LG Electronics 42LB6300 42-Inch 1080p 120Hz Smart LED TV
-              .producto-body
-                .descripcion
-                  | Refresh Rate: 120Hz (Native); Motion Clarity Index: 600 (Effective)
-                  | Backlight: LED (Direct LED)
-                  | Smart Functionality: Yes - WebOS, Includes Magic Remote
-                .acciones
-                  a.precio(href="#") S/. 1700.00
-            .home-producto
-              a(href="#")
-                img.producto-imagen(src="http://placehold.it/360x234")
-              h4.producto-nombre
-                a(href="#") LG Electronics 42LB6300 42-Inch 1080p 120Hz Smart LED TV
-              .producto-body
-                .descripcion
-                  | Refresh Rate: 120Hz (Native); Motion Clarity Index: 600 (Effective)
-                  | Backlight: LED (Direct LED)
-                  | Smart Functionality: Yes - WebOS, Includes Magic Remote
-                .acciones
-                  a.precio(href="#") S/. 1700.00
+          block content
+            
         .sidebar
           .sidebar-bloque
             p
-              img(src="http://placehold.it/400x100")
+              img(src="http://placehold.it/400x100", width="400", height="100")
           .sidebar-bloque
             p
-              img(src="http://placehold.it/400x100")
+              img(src="http://placehold.it/400x100", width="400", height="100")
           .sidebar-bloque
             p
-              img(src="http://placehold.it/400x100")
+              img(src="http://placehold.it/400x100", width="400", height="100")
           .sidebar-bloque
             p
-              img(src="http://placehold.it/400x100")
+              img(src="http://placehold.it/400x100", width="400", height="100")
+          block sidebar
+
+    .footer-container
+      footer.footer.wrapper
+        .footer-row.left
+          .logo
+            img(src="http://placehold.it/200x100", width="200", height="100")
+          .info
+            p
+             | CC. Molino 145
+             | Teléfono 232323
+             | Celular: 9898989
+             | venta@tvfacilcusco.com 
+
+        .footer-row.right
+          aside.footer-nav.clearfix
+            ul
+              li.active
+                a.active(href="#") Inicio
+              li
+                a(href="#") Productos
+              li
+                a(href="#") Nosotros
+              li
+                a(href="#") Contacto
+
+          aside.social-buttons.clearfix
+            a.social.fb(href="#")
+              i.fa.fa-facebook-square
+            a.social.tw(href="#")
+              i.fa.fa-twitter-square
+            a.social.gp(href="#")
+              i.fa.fa-google-plus-square
+            a.social.sp(href="#")
+              i.fa.fa-skype
+            a.social.yt(href="#")
+              i.fa.fa-youtube-square
 
   script(src="bower_components/jquery/jquery.min.js")
   script(src="bower_components/superslides/dist/jquery.superslides.min.js")
   script(src="js/tvfacil.js")
+  block js
 
