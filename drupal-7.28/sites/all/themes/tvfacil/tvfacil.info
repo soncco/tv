@@ -38,6 +38,7 @@ regions[footer_social]  = Footer Social
 
 regions[front_slider]   = Front Slider
 regions[front_productos]= Front Productos
+regions[extras]= Extras
 
 
 features[] = logo
