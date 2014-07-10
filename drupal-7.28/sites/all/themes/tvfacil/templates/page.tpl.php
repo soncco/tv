@@ -1,4 +1,4 @@
-<div class="header-container">
+<div class="header-container transparent">
   <header class="header wrapper">
     <h1 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a></h1>
     <div class="header-right">
