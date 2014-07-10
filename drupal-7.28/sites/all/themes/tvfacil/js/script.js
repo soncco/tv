@@ -23,7 +23,22 @@ Drupal.behaviors.tvfacil = {
       hideTools: false
     });
 
-    $('.node-add-to-cart', context).val('Agregar');
+    $input = $('.node-add-to-cart', context);
+    $input.css('display', 'none');
+
+
+    $button = $('<button></button>')
+    $button
+      .addClass('tvfacil-add-cart form-submit')
+      .attr({
+        'type': 'submit',
+        'id': $input.attr('id'),
+        'name': $input.attr('name')
+      })
+      .text('Agregar');
+
+    $input.after($button);
+
   }
 };
 
