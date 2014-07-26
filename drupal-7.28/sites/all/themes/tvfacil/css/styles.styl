@@ -101,7 +101,29 @@ a
           color #9bafc3;
 
           &:hover, &.active
-            color #fff;
+            color #fff
+
+      ul
+        ul
+          display none
+          position absolute
+          top 100%
+          background rgba(44,62,80,0.9)
+
+          li
+            float none
+            position relative 
+
+            a
+              padding 10px 10px
+
+        li:hover ul
+          display block
+
+        &:after
+          content ""
+          clear both
+          display block
         
 .main-slider
   padding 0
@@ -209,6 +231,10 @@ a
     font-size 20px
     color #fff
     text-transform uppercase
+
+    .footer-nav
+      ul ul
+        display none
 
     .footer-row
       padding-top 50px
